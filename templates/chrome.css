@@ -1,0 +1,89 @@
+body, #footer-container { background: #1b1b1b; }
+#footer-widgets-container { background: #1f1f1f; }
+#header-container { background:#f8f8f8;border-color: #e0e0e0; }
+
+a, #comments .comment-head .name, .slide-content .title { color: #3570b3; }
+a:hover, .archive_header, .post .title, .page .title, h1.title, .post .title a:link, .post .title a:visited, .single .title a:link, .single .title a:visited { color: #29384c; }
+
+.nav a { color: #464646; }
+.nav a:hover, 
+.nav li.current_page_item a, 
+.nav li.current_page_parent a,
+.nav li.current-menu-ancestor a,
+.nav li.current-cat a,
+.nav li.current-menu-item a,
+.nav li.sfHover { color: #bcbcbc; }
+
+#slides, #title-container { background:#f0f0f0; border-top: 3px solid #ebebeb; border-bottom:1px solid #e1e1e1; }
+.slide .entry h2 {color: #bbbbbb;}
+
+#main #testimonials .quote-icon { background-color: #e1e1e1; }
+#main .section { border-color: #c9c9c9; }
+
+#footer-widgets .widget h3 { border-color: #4a4a4a; color: #e7e7e7; }
+#footer-widgets .widget ul li { border-color: #484848; }
+
+#tabs, 
+#post-author, 
+#main #connect,
+.widget_woo_twitter .back, 
+#comments .comment .comment-container, 
+#comments .comment-entry,
+.search_main { background: #f8f8f8; border-color: #e4e4e4; }
+#post-author .profile-content { border-color: #e4e4e4; }
+#comments .comment-head, #post-author .profile-content { background: #f3f3f3; }
+
+a.button, 
+a.comment-reply-link, 
+#commentform #submit,
+.submit { background: #356db3; border-color: #7faf40; border-bottom-color: #20549a; }
+
+#cover { text-align: center; }
+
+body {
+    font-size: 14px;
+    line-height: 22px;
+    
+    color: rgb(78, 68, 60);
+}
+
+h1, h2, h3, h4, h5, h6  { margin: 0; ; font-family: "adelle",Georgia,"Times New Roman",serif; color: #222; font-weight:normal; line-height:2.0em; text-rendering: optimizelegibility; }
+h1  {font-size: 2em/1.5em } h2  {font-size: 1.8em/1.3em;} h3  {font-size: 1.6em;} h4  {font-size: 1.2em;} h5  {font-size: 1em;} h6  {font-size: 0.8em;}
+body  { font-family: "adelle",Georgia,"Times New Roman",serif; font: 14px/22px sans-serif; color: #000; }
+/*code { margin-top: 30px; margin-bottom: 30px; padding-left: 30px; } */
+
+table.sourceCode {
+  margin: 20px; border: 1px solid black; border-radius: 3px 3px 3px 3px; background-color rgb(239, 238, 230);
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 80%;
+}
+
+table.sourceCode pre {
+  margin: 0; border: none; 
+  width: 80%;
+  overflow: auto;
+}
+
+pre.sourceCode {
+  padding: 5px margin: 20px; border: 1px solid black; border-radius: 3px 3px 3px 3px; background-color rgb(239, 238, 230);
+  width: 80%;
+  overflow: auto;
+}
+
+pre {
+  padding: 5px; margin: 20px; border: 1px solid black; border-radius: 3px 3px 3px 3px; background-color rgb(239, 238, 230);
+  width: 80%;
+  overflow: auto;
+}
+
+pre.code {
+  margin: 2em; 
+}
+
+div#TOC > ul > li > ul > li ul { display: none; }
+div#TOC > ul > li > ul  { margin-left: 2em; }
+
+p { margin-top: 1em; margin-bottom: 1em;}
+#main-matter ol { list-style-type: decimal; margin: 2em; padding: 0;}
+#main-matter ul { list-style-type: disc; margin: 2em; padding: 0;}

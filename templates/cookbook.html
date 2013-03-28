@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="date" content="$date-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$if(pagetitle)$$pagetitle$$endif$</title>
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+<div id="wrapper">
+<div id="header-container">       
+  <div id="header" class="col-full">
+    <div id="logo">
+      <a href="http://www.axiosengineering.com" title="Axios, Inc.">
+	<img src="http://www.axiosengineering.com/wp-content/uploads/2011/09/Ax_Web_Logo_22.png" alt="Axios, Inc." />
+      </a>
+    </div><!-- /#logo -->
+  </div><!-- /#header -->
+</div><!-- /#header-container -->
+<div id="title-container">
+  <h1 class="title col-full">$title$</h1>
+</div>
+<div id="content" class="col-full">
+<div id="main" class="col-full">      
+<div id="cover">
+  <img src="figures/title_logo.png"/>
+</div> <!-- /#cover -->
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<div id="$idprefix$header">
+$for(author)$
+<h2 class="author">$author$</h2>
+$endfor$
+$if(date)$
+<h3 class="date">$date$</h3>
+$endif$
+</div>
+$endif$
+$if(toc)$
+<div id="$idprefix$TOC">
+$toc$
+</div>
+$endif$
+<div id="main-matter">
+$body$
+</div> <!-- /#main-matter -->
+$for(include-after)$
+$include-after$
+$endfor$
+</div><!-- /#main -->
+</div><!-- /#content -->
+<div id="footer-container">
+  <div id="footer" class="col-full">
+    Copyright (C) 2013 Axios, Inc. and others.<br />
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+      <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" />
+    </a>
+    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+  </div><!-- /#footer  -->
+</div><!-- /#footer-container -->
+</div> <!-- /#wrapper -->
+</body>
+</html>
+
