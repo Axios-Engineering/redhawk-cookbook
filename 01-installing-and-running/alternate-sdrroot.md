@@ -3,7 +3,7 @@ Running REDHAWK with an alternate $SDRROOT
 
 ### Problem
 
-You want to run REDHAWK with an $SDRROOT other than the sytem default.
+You want to run REDHAWK with an $SDRROOT other than the system default.
 
 ### Solution
 
@@ -38,5 +38,5 @@ There are a variety of reasons that you may want to use an `$SDRROOT`
 other than the default `/var/redhawk/sdr` folder. The most common is
 that you don't have write permissions to the default `$SDRROOT`. Another
 reason is that you are on a multi-user system and you don't want to have
-your development activites interact with other developers on the same
+your development activities interact with other developers on the same
 system.

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#
+# Clean up of markdown files:
+#   * Run them through pandoc to make nice and consistent indenting
+#     and wrapping
+#   * Run them through aspell
+
+ASPELL="aspell check --home-dir=${PWD} --personal=aspell-dict.pws"
+
+if [ -z ${1} ]; then
+    for md in `find ./ -name '*.md'`; do
+        ${ASPELL} ${md}
+        cat ${md} | pandoc -f markdown -o ${md}
+    done
+else
+    ${ASPELL} ${1}
+    cat ${1} | pandoc -f markdown -o ${1}
+fi

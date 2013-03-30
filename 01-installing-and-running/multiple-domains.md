@@ -64,6 +64,6 @@ processes.
 
 In addition to running on a unique port, the *DomainManager* must be
 uniquely named on the CORBA *NameServer*. The `--domainname` argument
-temporarily changes the domain name and is sufficent to use when
+temporarily changes the domain name and is sufficient to use when
 developing or testing REDHAWK. For other purposes, it is better to alter
 the `DomainManager.dmd.xml` file instead.

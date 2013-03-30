@@ -1,5 +1,3 @@
-%REDHAWK Cookbook
-
 Preface
 =======
 
@@ -21,7 +19,7 @@ Conventions
 All commands assume the `bash` shell, if you use `tcsh` you will
 potentially need to make substitutions.
 
-Command prompts that require root privileges are preceeded with the `#`
+Command prompts that require root privileges are preceded with the `#`
 prompt, for example:
 
     # yum install redhawk
@@ -30,7 +28,7 @@ Alternately, the instructions may use the `sudo`:
 
     $ sudo yum install redhawk
 
-Otherwise, command prompts are preceeded with the `$` prompt. The output
+Otherwise, command prompts are preceded with the `$` prompt. The output
 from a command, if any, will be presented without either prompts:
 
     $ nodeBooter -D
@@ -38,7 +36,7 @@ from a command, if any, will be presented without either prompts:
     INFO:DomainManager - Starting ORB!
 
 Sometime a command listing will include comments, which follow bash
-syntax and are preceeded with `#`
+syntax and are preceded with `#`
 
     $ nodeBooter -D -domain MY_DOMAIN # changes the domain name to MY_DOMAIN
 

@@ -13,12 +13,12 @@ you to fully-customize it's behavior. There are are small-set of options
 that you will want to pay specific attention to when using REDHAWK.
 
 The system omniORB configuration is typically located at
-`/etc/omniORB.cfg` and will require `root` priveledges to edit
+`/etc/omniORB.cfg` and will require `root` privileges to edit
 
     sudo gedit /etc/omniORB.cfg
 
-If you do not have `root` priveledges or do not want to modify the
-system-defaults you can alter the sytem defaults in two-ways. The
+If you do not have `root` privileges or do not want to modify the
+system-defaults you can alter the system defaults in two-ways. The
 easiest is to set the `$OMNIORB_CFG` variable to point to an alternate
 file:
 
@@ -63,15 +63,15 @@ implementation of your software.
 ***clientCallTimeOutPeriod*** : This alters how long a client will wait
 for the servant to complete it's request. By default this value is set
 to `0`, which indicates that the client will wait forever. For
-development or experimentation this value is sufficent, but for
+development or experimentation this value is sufficient, but for
 production systems this can cause deadlocks if unexpected errors occur
 that cause the server side to get stuck in a loop. In general, it's a
 good idea to increase this value (e.g. 60 sec.) so that when things go
 wrong a `TIMEOUT` exception is raised on the client-side. Setting an
-extremely large `clientCallTimeOutPeriod` (e.g. 300 sec.) ig generally
-an indicatation that you need to alter the implementation of your
-software so that long running operations are performed in a background
-thread and the client is notified when the operation is complete.
+extremely large `clientCallTimeOutPeriod` (e.g. 300 sec.) is generally
+an indication that you need to alter the implementation of your software
+so that long running operations are performed in a background thread and
+the client is notified when the operation is complete.
 
 ***InitRef*** : The `InitRef` allows CORBA programs to "bootstrap" and
 find various CORBA servants, such as the *NameServer* and *EventServer*.
@@ -85,8 +85,8 @@ the server). The default configuration will, at a minimum, support TCP
 connections. A common optimization used with REDHAWK development is to
 include support for unix-domain-sockets via the `giop:unix:` end point.
 This transport will improve BULKIO data transfer performance when both
-the client and server are colocated on the same machine. Another common
-situation is that a machine has multiple ethernet adapters and IP
+the client and server are collocated on the same machine. Another common
+situation is that a machine has multiple Ethernet adapters and IP
 addresses and you need to use `endPointPublish` to ensure that the
 proper IP address is exposed to the client.
 

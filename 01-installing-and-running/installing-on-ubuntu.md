@@ -10,7 +10,7 @@ You want to install REDHAWK on Ubuntu.
 Currently redhawksdr.org only provides pre-built binaries for the
 CentOS5 and CentOS6 operating-systems. Luckily, REDHAWK has been ported
 to Ubuntu 12.04 (Precise) and Ubuntu 12.10 (Quantal) and is easily
-installable from an Ubuntu Personal-Pacakge-Archive (PPA). The first
+installable from an Ubuntu Personal-Package-Archive (PPA). The first
 step is to add the [Axios REDHAWK
 PPA](https://launchpad.net/~axios/+archive/redhawk) to your system:
 
@@ -41,7 +41,7 @@ straight-forward:
 You may be prompted to "Allow development access to SDRROOT?", if you
 intend to use your system for development answer **Yes**.
 
-Once the installation has completed, there is a small amount of sytem
+Once the installation has completed, there is a small amount of system
 configuration that is required. This can be done with any text-editor of
 your choice, or by using the below commands:
 

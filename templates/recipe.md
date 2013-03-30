@@ -66,8 +66,8 @@ merge-conflicts.
 Markdown syntax is used because it is easy to edit and can be converted
 to produce high-quality HTML or PDFs.
 
-All receipes contributed to the *REDHAWK Cookbook* must be provided
-under the Creative Commons Attribution-Share Alike 3.0 license.
+All recipes contributed to the *REDHAWK Cookbook* must be provided under
+the Creative Commons Attribution-Share Alike 3.0 license.
 
 ### See Also
 

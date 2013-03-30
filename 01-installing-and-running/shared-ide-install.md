@@ -38,7 +38,7 @@ following link:
 
     $ sudo ln -s /opt/redhawk/ide/default/eclipse /usr/local/bin/rhide
 
-Alternately, on Redhat/CentOS the `alternatives` tool:
+Alternately, on REDHAT/CentOS the `alternatives` tool:
 
     $ sudo alternatives --install \
           /usr/local/bin/rhide rhide /opt/redhawk/ide/R.X.Y.Z/eclipse 0
@@ -53,10 +53,10 @@ Or on Ubuntu, use the `update-alternatives` tool
 Providing a common and shared REDHAWK IDE installation is a commonly
 done when multiple users share the same machine or the REDHAWK software
 is distributed to a set of machines via NFS. If you are the only user of
-the machine it's typically sufficent to simply install the REDHAWK IDE
+the machine it's typically sufficient to simply install the REDHAWK IDE
 into your home folder.
 
-Becuase the REDHAWK IDE is built upon [Eclipse](http://www.eclipse.org)
+Because the REDHAWK IDE is built upon [Eclipse](http://www.eclipse.org)
 it supports all of the multi-user scenarios that Eclipse supports. The
 approach listed above uses the "shared configuration" approach. See the
 Eclipse documentation for full details about the details of this
