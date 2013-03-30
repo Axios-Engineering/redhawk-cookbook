@@ -4,6 +4,7 @@
 MD_SOURCES=preface.md \
            templates/recipe.md \
            01-installing-and-running/introduction.md \
+           01-installing-and-running/fixing-redhawk-rpm-installs.md \
            01-installing-and-running/installing-on-ubuntu.md \
            01-installing-and-running/configuring-ubuntu-for-development.md \
            01-installing-and-running/configuring-omniorb.md \
