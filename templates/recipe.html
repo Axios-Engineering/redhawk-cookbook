@@ -32,9 +32,23 @@ $endfor$
   <div id="header" class="col-full">
     <div id="logo">
       <a href="http://www.axiosengineering.com" title="Axios, Inc.">
-	<img src="figures/axios_logo.png" alt="Axios, Inc." />
+	<img src="../figures/axios_logo.png" alt="Axios, Inc." />
       </a>
     </div><!-- /#logo -->
+    <div id="navigation" class="fr"> 
+      <div class="nav">
+	<ul>
+	  <li><a href="../index.html">REDHAWK Cookbook</a></li>
+          $if(prev)$
+	  <li><a href="$prev$">Prev</a></li>
+          $endif$
+          $if(next)$
+	  <li><a href="$next$">Next</a></li>
+          $endif$
+	</ul>
+      </div><!-- /.nav -->
+    </div><!-- /#navigation -->  
+    <div class="fix"></div>
   </div><!-- /#header -->
 </div><!-- /#header-container -->
 <div id="title-container">
@@ -42,9 +56,6 @@ $endfor$
 </div>
 <div id="content" class="col-full">
 <div id="main" class="col-full">      
-<div id="cover">
-  <img src="figures/title_logo.png"/>
-</div> <!-- /#cover -->
 $for(include-before)$
 $include-before$
 $endfor$
