@@ -10,7 +10,9 @@ MD_SOURCES=00-preface/preface.md \
            01-installing-and-running/configuring-omniorb.md \
            01-installing-and-running/alternate-sdrroot.md \
            01-installing-and-running/multiple-domains.md \
-           01-installing-and-running/shared-ide-install.md
+           01-installing-and-running/shared-ide-install.md \
+           08-interface-libraries/introduction.md \
+           08-interface-libraries/python_property_helpers.md
 
 HTML=$(MD_SOURCES:%.md=build/html/%.html)
 
