@@ -1,4 +1,4 @@
-personal_ws-1.1 en 78 
+personal_ws-1.1 en 80 
 tcsh
 login
 bulkiointerfaces
@@ -21,17 +21,19 @@ cp
 MBytes
 dpkg
 DeviceManager
-DomainManager
 REDHAT
+DomainManager
 omniORB
 epel
 CORBA
 GPG
+numberLines
 BULKIO
 Quantal
 EventService
 ctrl
 gpp
+ossie
 endPointNoPublish
 strictIIOP
 PDFs
