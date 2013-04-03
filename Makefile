@@ -45,6 +45,7 @@ build/toc.md: Makefile $(MD_SOURCES)
 	echo "\n" >> build/toc.md
 	echo "\[ [PDF](redhawk_cookbook.pdf) \]<br/>" >> build/toc.md
 	echo "\[ [All On One Page](redhawk_cookbook.html) \]<br/>" >> build/toc.md
+	echo "\[ [Documentation Source Code](https://github.com/Axios-Engineering/redhawk-cookbook) \]<br/>" >> build/toc.md
 
 build/html/index.html: build/toc.md templates/cookbook.html templates/style.css templates/chrome.css $(MD_SOURCES)
 	pandoc -S -N --highlight-style pygments -H templates/google-analytics.html -c style.css -c chrome.css --template=$(CURDIR)/templates/cookbook.html -s build/toc.md -o $@
