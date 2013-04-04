@@ -10,6 +10,7 @@ You want to allocate GPP resources with the components that are launched so that
 
 REDHAWK allocates dependencies specified in components on the devices that load and execute those components.  You can add dependencies to your component on the implementation tab from the IDE.  Common GPP properties to allocate include, CPU load capacity, memory, and network ingress and egress bandwidth.   
 
+![Editing Dependencies in the IDE](../gpp_depend_ide/pic.png)
 
 After using the IDE to add the implementation dependencies you can view the changes in the .spd.xml
 
