@@ -14,7 +14,9 @@ MD_SOURCES=00-preface/preface.md \
            03-components/introduction.md \
            03-components/allocating_gpp_resources.md \
            08-interface-libraries/introduction.md \
-           08-interface-libraries/python_property_helpers.md
+           08-interface-libraries/python_property_helpers.md \
+           13-misc/introduction.md \
+           13-misc/understanding-corba-bad-param.md
 
 HTML=$(MD_SOURCES:%.md=build/html/%.html)
 
