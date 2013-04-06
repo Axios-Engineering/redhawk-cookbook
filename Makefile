@@ -11,6 +11,8 @@ MD_SOURCES=00-preface/preface.md \
            01-installing-and-running/alternate-sdrroot.md \
            01-installing-and-running/multiple-domains.md \
            01-installing-and-running/shared-ide-install.md \
+           03-components/introduction.md \
+           03-components/allocating_gpp_resources.md \
            08-interface-libraries/introduction.md \
            08-interface-libraries/python_property_helpers.md
 
