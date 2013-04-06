@@ -53,6 +53,7 @@ build/html/index.html: build/toc.md templates/cookbook.html templates/style.css 
 build/html/%.html: %.md
 	mkdir -p build/html/$(shell dirname $<)
 	sed -e '1 s/^/%/; 2d' $< | pandoc -S --highlight-style pygments -H templates/google-analytics.html -c ../style.css -c ../chrome.css --template=$(CURDIR)/templates/recipe.html -s -o $@;
+	sed -i 's!src="figures!src="../figures!g' $@
 
 build/html/redhawk_cookbook.html: templates/cookbook.html templates/style.css templates/chrome.css $(MD_SOURCES)
 	mkdir -p build/html
