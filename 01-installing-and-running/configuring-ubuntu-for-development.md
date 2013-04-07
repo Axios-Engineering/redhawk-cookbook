@@ -15,7 +15,7 @@ packages.
 
 Next, ensure that you have configured REDHAWK for development:
 
-    $ dpkg-reconfigure redhawk
+    $ sudo dpkg-reconfigure redhawk
 
 When prompted to "Allow development access to SDRROOT?" answer **Yes**.
 This will ensure that users in the `redhawk` group will be able to write
@@ -25,9 +25,10 @@ Then add yourself to the `redhawk` group:
 
     $ sudo adduser ${USER} redhawk
 
-If you intend to use the REDHAWK IDE for development, then it is
-recommended that you install the Ubuntu relevant patches provided by the
-[Axios REDHAWK IDE
+The standard REDHAWK IDE installation instructions work on Ubuntu.
+Download the CentOS IDE build that corresponds to your architecture and
+unzip the download. It is recommended that you install the Ubuntu
+relevant patches provided by the [Axios REDHAWK IDE
 Update-Site](https://github.com/Axios-Engineering/redhawk-ide-patch-updatesite).
 
 ### Discussion
@@ -59,3 +60,11 @@ settings using `ls -l`:
 The "sticky-bit" (i.e. the `s` flag) ensures that directories and
 folders created in the components, devices, waveforms, and nodes folders
 inherit the `redhawk` group.
+
+### See Also
+
+-   [REDHAWK Download
+    Page](http://redhawksdr.github.io/Documentation/download.html)
+-   [REDHAWK IDE Installation
+    Instructions](http://redhawksdr.github.io/Documentation/mainch2.html#x4-110002.4)
+
