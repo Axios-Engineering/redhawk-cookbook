@@ -16,7 +16,8 @@ MD_SOURCES=00-preface/preface.md \
            08-interface-libraries/introduction.md \
            08-interface-libraries/python_property_helpers.md \
            13-misc/introduction.md \
-           13-misc/understanding-corba-bad-param.md
+           13-misc/understanding-corba-bad-param.md \
+           13-misc/understanding-corba-unknown-python-exception.md
 
 HTML=$(MD_SOURCES:%.md=build/html/%.html)
 
