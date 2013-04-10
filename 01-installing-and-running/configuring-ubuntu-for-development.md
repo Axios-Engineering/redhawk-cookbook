@@ -27,9 +27,35 @@ Then add yourself to the `redhawk` group:
 
 The standard REDHAWK IDE installation instructions work on Ubuntu.
 Download the CentOS IDE build that corresponds to your architecture and
-unzip the download. It is recommended that you install the Ubuntu
-relevant patches provided by the [Axios REDHAWK IDE
+unzip the download.
+
+**IMPORTANT** Ubuntu installs the omniidl python modules in
+`/usr/lib/omniidl` (unlike CentOS/RHEL where those files are available
+on the Python path). The 1.8.3 REDHAWK code generators require those
+files to be available on the python path for proper operation. When you
+attempt to run a code generation that includes ports, you will get an
+error:
+
+    ImportError: No module named _omniidl
+
+![Code Generator Error](figures/omniidl_code_generator_error.png)
+
+There are two possible ways to workaround this issue.
+
+The first is to add `/usr/lib/omniidl` to your python path *before*
+running the IDE.
+
+    export PYTHONPATH=/usr/lib/omniidl:$PYTHONPATH
+
+This must be done each time before running the IDE; adding the line into
+your `.bashrc` file (or equivalent) is an easy way to ensure that this
+is done on login.
+
+*Alternately*, you can install the following IDE patches provided by the
+[Axios REDHAWK IDE
 Update-Site](https://github.com/Axios-Engineering/redhawk-ide-patch-updatesite).
+These patches include fixes to the code generation so that it can
+properly locate the omniidl modules as installed by Ubuntu.
 
 ### Discussion
 
