@@ -13,6 +13,7 @@ MD_SOURCES=00-preface/preface.md \
            01-installing-and-running/shared-ide-install.md \
            03-components/introduction.md \
            03-components/allocating_gpp_resources.md \
+           03-components/make-properties-readonly-while-started.md \
            08-interface-libraries/introduction.md \
            08-interface-libraries/python_property_helpers.md \
            13-misc/introduction.md \
