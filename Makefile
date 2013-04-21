@@ -16,6 +16,8 @@ MD_SOURCES=00-preface/preface.md \
            03-components/make-properties-readonly-while-started.md \
            08-interface-libraries/introduction.md \
            08-interface-libraries/python_property_helpers.md \
+           11-testing/introduction.md \
+           11-testing/setting-logging-level-during-unittests.md \
            13-misc/introduction.md \
            13-misc/understanding-corba-bad-param.md \
            13-misc/understanding-corba-unknown-python-exception.md
